@@ -1,3 +1,17 @@
+/*
+--building-colour1 is a variable
+it can be used at any point in a selector with in it 
+means one change will alter all colours with that variable
+
+Best to put variable declarations in the :root as they're accessible everywhere
+*/
+
+:root {
+    --building-color1: #aa80ff;
+    --building-color2: #66cc99;
+    --building-color3: #cc6699;
+}
+
 /*'border-box measures from the edge of the box so madding + border are included in the width*/
 * {
     border: 1px solid black;
@@ -19,19 +33,13 @@ body {
     align-items: flex-end;
 }
 
-/*
---building-colour1 is a variable
-it can be used at any point in the css file
-means one change will alter all colours with variable
-*/
+
 .bb1 {
     width: 10%;
     height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    --building-color1: #999;
-    --building-color2: #66cc99;
 }
 
 /* 
@@ -74,6 +82,7 @@ second value in variable call is fallback
 .bb3 {
     width: 10%;
     height: 55%;   
+    background-color: var(--building-color3, pink);
 }
 
 .bb4 {
