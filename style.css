@@ -1,0 +1,12 @@
+/*'border-box measures from the edge of the box so madding + border are included in the width*/
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/*'overflow' hides scroll bar when something extends past viewport*/
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
