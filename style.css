@@ -45,6 +45,7 @@ body {
 
 /*
 common in all building classes so no need to repeat
+'flex-direction: colomn;' means items fall underneath eachother
 */
 .building-wrap{
     display: flex;
